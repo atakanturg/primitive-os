@@ -27,9 +27,13 @@ export function Ontology() {
         <p className="max-w-md mx-auto text-terra-bg/80 font-light text-sm leading-loose">
           Ready to extract unstructured insights at scale? Access Primitive Ontology.
         </p>
-        <button className="px-10 py-5 bg-white text-terra-ink font-medium uppercase tracking-[0.2em] text-[10px] hover:bg-terra-border hover:bg-zinc-200 transition-all duration-500">
-          Go to Ontology solution
-        </button>
+        href="https://ontology.primitive-os.cc"
+  target="_blank"
+  rel="noopener noreferrer"
+  className="px-10 py-5 bg-white text-terra-ink font-medium uppercase tracking-[0.2em] text-[10px] hover:bg-terra-border hover:bg-zinc-200 transition-all duration-500"
+>
+  Go to Ontology solution
+</a>
       </section>
     </div>
   );
