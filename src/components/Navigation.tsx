@@ -4,7 +4,7 @@ import { useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 
 export function Navigation() {
-  const [isOpen, setIsOpen] = useState(false);
+  const [isOpen, setIsOpen] = useState(true);
   const location = useLocation();
 
   const routes = [
