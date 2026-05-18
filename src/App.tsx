@@ -3,6 +3,7 @@ import Layout from './components/Layout';
 import { Home } from './pages/Home';
 import { Ontology } from './pages/Ontology';
 import { Onboarding } from './pages/Onboarding';
+import { Shield } from './pages/Shield';
 
 export default function App() {
   return (
@@ -11,6 +12,7 @@ export default function App() {
         <Route index element={<Home />} />
         <Route path="ontology" element={<Ontology />} />
         <Route path="onboarding" element={<Onboarding />} />
+        <Route path="shield" element={<Shield />} />
       </Route>
     </Routes>
   );

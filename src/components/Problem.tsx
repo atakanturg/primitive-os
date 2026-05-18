@@ -3,7 +3,7 @@ import { motion } from 'motion/react';
 const PAIN_POINTS = [
   {
     title: "Fragile Pipelines",
-    description: "Standard web scrapers constantly break. We handle site updates and layout changes automatically so your data never stops."
+    description: "Standard web scrapers constantly break. We handle the backend behind the scenes. Our scrapers are fully private. Security and stability are our top priorities."
   },
   {
     title: "Unstructured Output",

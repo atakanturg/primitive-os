@@ -1,36 +1,34 @@
 import { motion } from 'motion/react';
-import { Slack } from 'lucide-react';
+import { Shield as ShieldIcon } from 'lucide-react';
 
 const FEATURES = [
   {
-    title: "Automated Bot",
-    description: "Our bot integrates directly into your workspace to handle the complete onboarding lifecycle."
+    title: "Rapid Response",
+    description: "Engineered to combat predatory evictions and mitigate displacement of vulnerable residents in real-time."
   },
   {
-    title: "Slack Integration",
-    description: "Seamless deployment within Slack. Communicates natively with new hires."
+    title: "AI-Driven Mitigation",
+    description: "Leverages deterministic prompt engineering to digest complex legal jargon and generate clear mitigation strategies."
   },
   {
-    title: "Fast Setup",
-    description: "Cuts onboarding time by 80%. Automates access provisioning and orientation."
+    title: "Community Impact",
+    description: "Awarded 1st Place at the YCI Hackathon 2026 for its innovative approach to tenant-rights education."
   }
 ];
 
-export function Onboarding() {
+export function Shield() {
   return (
     <div className="pt-8 pb-32 px-4">
-      <section className="text-center pb-8">
-        <div className="max-w-4xl mx-auto mb-8 py-2 px-4 bg-red-50 border border-red-200 text-red-700 text-xs font-medium rounded-full inline-block">
-          Currently offline due to program expansion and backend overhaul.
-        </div>
+      <section className="text-center pb-16">
         <div className="max-w-4xl mx-auto flex flex-col items-center space-y-10">
           <motion.div
              initial={{ opacity: 0, y: 15 }}
              animate={{ opacity: 1, y: 0 }}
              transition={{ duration: 1, delay: 0.3 }}
           >
+            <h1 className="text-4xl md:text-6xl font-serif font-light tracking-tight text-terra-ink mb-6">Primitive Shield</h1>
             <p className="max-w-2xl mx-auto text-terra-muted text-lg font-medium leading-relaxed">
-              Automating the integration of new hires into pre-existing Slack ecosystems through an intelligent autonomous bot.
+              A civic-tech platform designed to protect tenants from predatory gentrification and legal exploitation through context-aware AI guidance.
             </p>
           </motion.div>
         </div>
@@ -55,14 +53,14 @@ export function Onboarding() {
       </section>
       
       <section className="max-w-4xl mx-auto mt-32 p-16 bg-terra-ink text-terra-bg text-center space-y-10">
-        <Slack strokeWidth={1} className="w-12 h-12 mx-auto text-white" />
-        <h2 className="text-4xl md:text-5xl font-serif font-light tracking-wide">Deploy the Bot.</h2>
+        <ShieldIcon strokeWidth={1} className="w-12 h-12 mx-auto text-white" />
+        <h2 className="text-4xl md:text-5xl font-serif font-light tracking-wide">Protect Your Rights.</h2>
         <p className="max-w-md mx-auto text-terra-bg/80 font-light text-sm leading-loose">
-          Ready to eliminate onboarding friction? Integrate Primitive Onboarding into your workspace.
+          Facing a complex legal threat? Access Primitive Shield to generate your structured mitigation strategy.
         </p>
-        <button disabled className="px-10 py-5 bg-zinc-600 text-terra-bg/50 font-medium uppercase tracking-[0.2em] text-[10px] cursor-not-allowed transition-all duration-500">
-          Currently Unavailable
-        </button>
+        <a href="https://shield.primitive-os.cc" target="_blank" rel="noopener noreferrer" className="px-10 py-5 bg-white text-terra-ink font-medium uppercase tracking-[0.2em] text-[10px] hover:bg-terra-border hover:bg-zinc-200 transition-all duration-500">
+          Go to Shield solution
+        </a>
       </section>
     </div>
   );

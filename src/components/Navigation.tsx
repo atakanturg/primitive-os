@@ -11,6 +11,7 @@ export function Navigation() {
     { path: '/', label: 'Home' },
     { path: '/ontology', label: 'Ontology Systems' },
     { path: '/onboarding', label: 'Onboarding Solutions' },
+    { path: '/shield', label: 'Primitive Shield' },
   ];
 
   return (
